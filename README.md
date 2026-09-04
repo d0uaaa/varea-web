@@ -52,3 +52,4 @@ This is a **demo storefront**, not a production e-commerce backend. Specifically
 - **Add a product**: add an entry to `src/lib/products.ts` and drop an image in `public/images/`. It automatically appears in the listing, homepage bestsellers, and gets its own detail page.
 - **Add a real payment provider**: replace the mock submit handler in `src/app/checkout/page.tsx` with a real Stripe Checkout session or Payment Intent call.
 - **Add real accounts**: swap `src/lib/orders.ts`'s `localStorage` calls for a real database + auth provider (NextAuth, Clerk, etc.) — the rest of the app (`/account`, `/order-confirmation`) is already shaped to consume an `Order[]`, so the UI layer mostly doesn't need to change.
+"# varea-web" 
