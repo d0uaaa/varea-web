@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Verae brand tokens — use as bg-verae-plum, text-verae-accent, etc. */
+  --color-verae-plum: #4e3b63; /* primary dark brand color (utility bar, hero, footer) */
+  --color-verae-plum-dark: #3a2e4d; /* deeper plum for buttons/cards */
+  --color-verae-lilac-bg: #f6f1fa; /* page background */
+  --color-verae-lilac-bg-2: #f2eef7; /* alternate section background */
+  --color-verae-pink: #f0c9dd; /* pink accent card fill */
+  --color-verae-lavender: #c9b6e4; /* lavender accent card fill */
+  --color-verae-accent: #b98ccb; /* primary CTA / accent purple */
+  --color-verae-accent-text: #9b6fb0; /* eyebrow / link purple */
+  --color-verae-text-dark: #2e2440; /* primary text */
+  --color-verae-text-muted: #7a6c91; /* secondary/muted text */
+  --color-verae-text-on-dark: #c9b6dc; /* body text on dark backgrounds */
+  --color-verae-text-on-dark-strong: #f6f1fa; /* headings on dark backgrounds */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
